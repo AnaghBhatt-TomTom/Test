@@ -19,7 +19,7 @@ jobs:
         files: './KeyVault/parameter_qas.json'
     env:
         
-        KVTOKEN: ${{ secrets.KVTOKEN }}
+        token.value: ${{ secrets.KVTOKEN }}
 
      
    
