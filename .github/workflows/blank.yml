@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: microsoft/variable-substitution@v1
       with:
-        files: 'parameter_qas.json'
+        files: './KeyVault/parameter_qas.json'
     env:
         
         parameters.token.value: ${{ secrets.KVTOKEN }}
