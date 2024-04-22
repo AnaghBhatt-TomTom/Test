@@ -20,6 +20,7 @@ jobs:
     env:
         
         CosmosDbSettings.AuthKey: ${{ secrets.KVTOKEN }}
+        run: echo "$CosmosDbSettings.AuthKey"
 
      
    
