@@ -16,11 +16,11 @@ jobs:
     - uses: actions/checkout@v2
     - uses: microsoft/variable-substitution@v1
       with:
-        files: 'appsettings.json'
+        files: 'parameter_qas.json'
     env:
         
-        CosmosDbSettings.AuthKey: ${{ secrets.KVTOKEN }}
-        run: echo "$CosmosDbSettings.AuthKey"
+        token.value: ${{ secrets.KVTOKEN }}
+       
 
      
    
