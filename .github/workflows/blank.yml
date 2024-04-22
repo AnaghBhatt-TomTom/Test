@@ -19,7 +19,7 @@ jobs:
         files: 'appsettings.json'
     env:
         
-        CosmosDbSettings:AuthKey: ${{ secrets.KVTOKEN }}
+        CosmosDbSettings.AuthKey: ${{ secrets.KVTOKEN }}
 
      
    
