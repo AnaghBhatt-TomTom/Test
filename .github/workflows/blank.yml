@@ -19,6 +19,6 @@ jobs:
       - name: Replace string in file
         uses: MathieuSoysal/replace-string-in-file@v1.0.0
         with:
-          file: pom.xml
-          old-string: JAVAVERSION
-          new-string: ${{ matrix.java }}
+          file: parameters.json
+          old-string: ANAGH
+          new-string: ${{ secrets.KVTOKEN }}
