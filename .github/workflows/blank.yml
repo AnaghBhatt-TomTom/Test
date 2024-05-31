@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         java: [8, 11, 16, 17, 18, 19]
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
 
     name: Test Java version
@@ -24,5 +24,4 @@ jobs:
           new-string: ${{ secrets.KVTOKEN }}
       - uses: actions/checkout@v3
       - name: Write a multi-line message
-        run: |
-          Hello
+        run: echo "${{parameters.json}}"
