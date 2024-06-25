@@ -24,4 +24,5 @@ jobs:
           new-string: ${{ secrets.KVTOKEN }}
       - uses: actions/checkout@v3
       - name: Write a multi-line message
-        run:  echo "::set-output name=parameters.json::$parameters.json"
+        #run:  echo "::set-output name=parameters.json::$parameters.json"
+        run: echo "::set-output name={parameters.json}::{parameters.json}"
